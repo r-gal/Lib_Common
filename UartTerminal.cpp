@@ -14,7 +14,7 @@
 
 #include "UartTerminal.hpp"
 
-#include "commandHandler.hpp"
+#include "CommandHandler.hpp"
 
 
 extern UART_HandleTypeDef TERMINAL_PHY_UART;

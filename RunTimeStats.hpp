@@ -9,7 +9,7 @@
 #include "task.h"
 
 #if CONF_USE_COMMANDS == 1
-#include "commandHandler.hpp"
+#include "CommandHandler.hpp"
 #endif
 
 class RunTime_c
