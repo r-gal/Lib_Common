@@ -7,6 +7,7 @@
 #include "FreeRTOS.h"
 
 #include "queue.h"
+#include "timers.h"
 
 #define TRACE_SIGNALS 1
 
@@ -89,7 +90,7 @@ class process_c : public SignalLayer_c
 
 };
 
-
+void StandardTimerSignalHandler( TimerHandle_t xTimer );
 
 
 #endif

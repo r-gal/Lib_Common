@@ -120,5 +120,10 @@ bool SignalLayer_c::CheckSig(Sig_c** recsig_pp,HANDLERS_et handle)
    return xQueueReceive( GetHandler(handle),recsig_pp,0 );
 }
 
+void StandardTimerSignalHandler( TimerHandle_t xTimer )
+{
+  Sig_c* sig_p = (Sig_c*) pvTimerGetTimerID(xTimer);
+  sig_p->SendISR();
+}
 
 
