@@ -40,7 +40,7 @@ RunTime_c::Start();
 
 extern TIM_HandleTypeDef configRUNTIME_TIMER; 
 
-
+RunTime_c* RunTime_c::ownPtr = nullptr;
 
 #ifdef __cplusplus
  extern "C" {
@@ -51,7 +51,7 @@ uint32_t GetRunTimeTimer(void)
 }
 
 
-RunTime_c* RunTime_c::ownPtr = nullptr;
+
 
 void CreateTaskWrapper(void* task_)
 {
