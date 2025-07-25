@@ -467,7 +467,6 @@ void HeapManager_c::SetId(void* pv, int id)
 
 void HeapManager_c::DefineHeapRegions( HeapRegion_t * const pxHeapRegions  )
 {
-  HeapRegion_t *pxHeapRegion;
   uint8_t i;
 
   //printf("size= %u\r\n",sizeof(struct memData_st));

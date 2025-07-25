@@ -214,22 +214,22 @@ bool RunTime_c::Print(char* strBuf, uint8_t i)
     sprintf(strBufTmp,"%2d: %-12s ",i,pcTaskGetName(taskList[i]));
     strBufTmp += 17;
 
-    sprintf(strBufTmp,"%04d %% ",actTicksCnt[i]);
+    sprintf(strBufTmp,"%04ld %% ",actTicksCnt[i]);
     strBufTmp[4] = strBufTmp[3];
     strBufTmp[3] = '.';
     strBufTmp +=7;
 
-    sprintf(strBufTmp,"%04d %% ",ticksCnt10);
+    sprintf(strBufTmp,"%04ld %% ",ticksCnt10);
     strBufTmp[4] = strBufTmp[3];
     strBufTmp[3] = '.';
     strBufTmp +=7;
 
-    sprintf(strBufTmp,"%04d %% ",maxLoad[i]);
+    sprintf(strBufTmp,"%04ld %% ",maxLoad[i]);
     strBufTmp[4] = strBufTmp[3];
     strBufTmp[3] = '.';
     strBufTmp +=7;
 
-    sprintf(strBufTmp," %6d ",age[i]);
+    sprintf(strBufTmp," %6ld ",age[i]);
     strBufTmp +=7;
 
     sprintf(strBufTmp,"\n");
